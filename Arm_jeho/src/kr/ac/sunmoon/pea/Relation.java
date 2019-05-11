@@ -33,14 +33,22 @@ public class Relation
 		x.add("a");
 		x.add("b");
 		ArrayList<Integer> output = funcX(x, hmRel);
-		System.out.println(output.toString());
+		System.out.println("transaction with item a and item b >> " + output);
 		
 		// test 2
 		x = new ArrayList<String>();
 		x.add("a");
 		x.add("c");
 		output = funcX(x, hmRel);
-		System.out.println(output.toString());
+		System.out.println("transaction with item a and item c >> " + output);
+		
+		
+		// test 3
+		x = new ArrayList<String>();
+		x.add("b");
+		x.add("c");
+		output = funcX(x, hmRel);
+		System.out.println("transaction with item b and item c >> " + output);
 		
 //		ArrayList<Person> people = new ArrayList<Person>();
 //		Person p_1 = new Person();
@@ -58,6 +66,7 @@ public class Relation
 	private static ArrayList<Integer> funcX(ArrayList<String> x, HashMap<String, ArrayList<Integer>> hmRel)
 	{
 		ArrayList<Integer> output = new ArrayList<Integer>();
+		ArrayList<Integer> Intersection = new ArrayList<Integer>();
 		if(x.size() > 0)
 		{
 			String item = x.get(0);
@@ -67,14 +76,27 @@ public class Relation
 			{
 				item = x.get(i);
 				ArrayList<Integer> transs = hmRel.get(item);
+				Intersection = intersection(output,transs);
+				
 				
 				// output = output and transs
 				
 			}
 		}
 		
-		return output;
+		return Intersection;
 	}
+    public static <Integer> ArrayList<Integer> intersection(ArrayList<Integer> output,ArrayList<Integer> transs) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        for (Integer t : transs) {
+            if(output.contains(t)) {
+                list.add(t);
+            }
+        }
+
+        return list;
+    }
 }
 
 //class Person
