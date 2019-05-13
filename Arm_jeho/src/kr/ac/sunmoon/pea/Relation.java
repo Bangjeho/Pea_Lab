@@ -50,6 +50,7 @@ public class Relation
 		output = funcX(x, hmRel);
 		System.out.println("transaction with item b and item c >> " + output);
 		
+		
 //		ArrayList<Person> people = new ArrayList<Person>();
 //		Person p_1 = new Person();
 //		p_1.setName("Park");
@@ -74,13 +75,9 @@ public class Relation
 			
 			for(int i=1; i<x.size(); i++)
 			{
-				item = x.get(i);
-				ArrayList<Integer> transs = hmRel.get(item);
-				Intersection = intersection(output,transs);
-				
-				
-				// output = output and transs
-				
+					item = x.get(i);
+					ArrayList<Integer> transs = hmRel.get(item);
+					Intersection = intersection(output,transs);
 			}
 		}
 		
