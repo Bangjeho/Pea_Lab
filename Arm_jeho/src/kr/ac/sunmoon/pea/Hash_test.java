@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Hashset_Test {
+public class Hash_test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -58,3 +58,4 @@ public class Hashset_Test {
 	}
 	
 }
+

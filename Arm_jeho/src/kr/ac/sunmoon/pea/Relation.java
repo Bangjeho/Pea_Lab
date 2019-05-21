@@ -45,19 +45,18 @@ public class Relation
 		x.add("a");
 		x.add("b");
 		ArrayList<Integer> output = funcX(x, hmRel);
-<<<<<<< HEAD
+		
 		System.out.println("transaction with item a and item b >> " + output);
-=======
+
 		long end_time = System.currentTimeMillis();
 		System.out.println("transaction with item a and item b >> " + output + ", Execution time : " + (end_time - start_time) + "(ms)");
 
->>>>>>> 72fe780b2b78f4e3cd80d3d2cebce6b36b7e69a3
 		
 		// test 2 item a and item c intersection
 		x = new ArrayList<String>();
 		x.add("a");
 		x.add("c");
-<<<<<<< HEAD
+		
 		output = funcX(x, hmRel);
 		System.out.println("transaction with item a and item c >> " + output);
 		
@@ -69,7 +68,7 @@ public class Relation
 		output = funcX(x, hmRel);
 		System.out.println("transaction with item b and item c >> " + output);
 		
-=======
+		
 		ArrayList<Integer> output2 = funcX(x, hmRel);
 		end_time = System.currentTimeMillis();
 		System.out.println("transaction with item a and item c >> " + output2 + ", Execution time : " + (end_time - start_time) + "(ms)");
@@ -104,7 +103,6 @@ public class Relation
 		ArrayList<Integer> output6 = funcY(x, hmRel, output5);
 		end_time = System.currentTimeMillis();
 		System.out.println("transaction with item a and item b and item c and item d >> " + output6 + ", Execution time : " + (end_time - start_time) + "(ms)");
->>>>>>> 72fe780b2b78f4e3cd80d3d2cebce6b36b7e69a3
 		
 //		ArrayList<Person> people = new ArrayList<Person>();
 //		Person p_1 = new Person();
@@ -137,9 +135,6 @@ public class Relation
 		}
 		
 		return Intersection;
-<<<<<<< HEAD
-	}
-=======
 	}
 	
 	// Double intersection function method exam) ((a and b)and c)
@@ -157,7 +152,6 @@ public class Relation
 		
 	}
 	//find to intersection with item ? and item ? method 
->>>>>>> 72fe780b2b78f4e3cd80d3d2cebce6b36b7e69a3
     public static <Integer> ArrayList<Integer> intersection(ArrayList<Integer> output,ArrayList<Integer> transs) {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
