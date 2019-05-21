@@ -1,0 +1,26 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Shpping {
+	
+	public static void main(String[] args) {
+		HashMap<String, Integer> hsShp = new HashMap<String, Integer>; 
+		
+		System.out.println("현재 10000원 가지고 있네영");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("메뉴출력");
+		String s;
+		int n;
+		while(true){
+			System.out.print("어떤 물품 살랭?");
+			s = scan.next();
+			if(s.equals("0")) {
+				break;
+			}
+			System.out.println("몇개살랭?");
+			n = scan.nextInt();	
+			
+		}
+	}
+
+}

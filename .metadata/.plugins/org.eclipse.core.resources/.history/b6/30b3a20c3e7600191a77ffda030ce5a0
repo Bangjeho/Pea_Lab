@@ -1,0 +1,32 @@
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Shpping {
+	static int charge;
+	static int total;
+	public static void main(String[] args) {
+		HashMap<String, Integer> hsShp = new HashMap<String, Integer>(); 
+		
+		hsShp.put("책", 5500);
+		hsShp.put("케이크", 2500);
+		hsShp.put("쿠키", 4500);
+		
+		System.out.println("현재 10000원 가지고 있네영");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("메뉴출력");
+		String s = null;
+		int n;
+		System.out.print("어떤 물품 살랭?");
+//		if(s.equals("0")) {
+//			break;
+//		}
+		s = scan.next();
+		System.out.println("몇개살랭?");
+		n = scan.nextInt();	
+		
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+package kr.ac.sunmoon.pea;
+
+import java.util.ArrayList;
+import java.util.BitSet;
+
+public class RelationBitSet 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList<BitSet> relations = new ArrayList<BitSet>();
+	}
+}

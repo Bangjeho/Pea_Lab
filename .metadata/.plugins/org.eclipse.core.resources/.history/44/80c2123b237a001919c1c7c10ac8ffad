@@ -1,0 +1,9 @@
+package kr.ac.sunmoon.pea;
+
+public class RelationBitSet 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}
