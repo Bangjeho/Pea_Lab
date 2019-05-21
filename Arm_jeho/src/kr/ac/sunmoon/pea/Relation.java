@@ -1,6 +1,6 @@
 package kr.ac.sunmoon.pea;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -8,6 +8,7 @@ public class Relation
 {
 	public static void main(String[] args)
 	{
+		
 		long start_time = System.currentTimeMillis();
 		
 		HashMap<String, ArrayList<Integer>> hmRel = new HashMap<String, ArrayList<Integer>>();
